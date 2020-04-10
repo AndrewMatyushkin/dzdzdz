@@ -1,0 +1,112 @@
+/* GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Russo One', sans-serif;
+}
+
+body {
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563);
+    background: linear-gradient(to right, #29323c, #485563);
+}
+p {
+    font-size: 20px;
+}
+.wrapper {
+    width: 1170px;
+    margin: auto;
+}
+
+.progress {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 4px;
+    background-color: tomato;
+    z-index: 100;
+    box-shadow: 0 0 12px #8e48ff , 0 0 40px #8e48ff, 0 0 80px #8e48ff;
+}
+
+/* HEADER */
+.bg {
+    height: 100vh;  
+}
+.header {
+    padding-top: 20%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+/* MAIN */
+
+.main {
+    padding-top: 75px;
+}
+
+.main h1 {
+    padding-bottom: 50px;
+}
+
+.main p {
+    font-size: 20px;
+}
+
+/* MAIN SECOND */
+
+.main-second {
+    text-align: center;
+    padding-top: 15%;
+    text-shadow: 0 0 12px #8e48ff , 0 0 40px #8e48ff, 0 0 80px #8e48ff;
+}
+
+/* CARDS */
+
+.section {
+    perspective: 1000px;
+}
+
+.container {
+    width: 680px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    transform: rotateX(55deg) rotateZ(-45deg) rotateY(10deg);
+    transform-style: preserve-3d;
+}
+
+.container-origin {
+    transform: rotate(0);
+}
+
+img {
+    max-width: 100%;
+    box-shadow: 0 0 12px #8e48ff , 0 0 40px #8e48ff, 0 0 80px #8e48ff;
+}
+
+.card {
+    width: 200px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateZ(15px);
+}
+
+.author {
+    float: right;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
